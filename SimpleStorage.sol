@@ -7,12 +7,12 @@ contract SimpleStorage {
     uint x;
 
     //Allows the unsigned integer stored to be changed
-    function set(uint newValue) {
+    function set(uint newValue) public {
         x = newValue;
     }
     
     //Returns the currently stored unsigned integer
-    function get() returns (uint) {
+    function get() public view returns (uint) {
         return x;
     }
 }
